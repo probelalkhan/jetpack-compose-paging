@@ -10,6 +10,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import dagger.hilt.android.AndroidEntryPoint
 import net.simplifiedcoding.ui.MainViewModel
+import net.simplifiedcoding.ui.UserList
 import net.simplifiedcoding.ui.theme.PagingSampleTheme
 
 @AndroidEntryPoint
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    UserList(viewModel = viewModel)
                 }
             }
         }
